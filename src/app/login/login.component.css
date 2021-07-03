@@ -1,0 +1,42 @@
+
+.header{
+    background-image: url(../images/service.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header_overlay{
+    background-color: rgba(31, 31, 31, 0.75);
+    height: 100%;
+}
+
+label{
+    color:whitesmoke;
+    font-size: 15px;
+}
+
+.mybutton{
+    width: 180px;
+    position: relative;
+    left: 100px;
+}
+
+.error{
+    color: red;
+}
+
+@media screen and (max-width:768px) {
+    .mybutton{
+        width: 160px;
+        position: relative;
+        left: 80px;
+    }
+}
+
+
+
+
+
+

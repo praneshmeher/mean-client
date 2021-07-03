@@ -1,0 +1,45 @@
+<header class="header">
+  <div class="header_overlay">
+      <br> 
+      <br> 
+      <br> 
+      <br>
+
+  <div class="container">
+
+    <div class="panel panel-primary" 
+    *ngFor="let center of centers">
+
+      <div class="panel-heading">
+        <div class="panel-title">Service Center Details</div>
+      </div>
+
+      <div class="panel-body">
+        <address >
+          <strong>{{center.SCname}}</strong><br>
+          <a href="mailto:#">{{center.SCemail}}</a>
+        </address>
+
+        <address>
+          <strong>{{center.SCcity}}</strong><br>
+          {{center.SCaddr}}, {{center.SCpincode}}<br>
+          <abbr title="Phone">Phone:</abbr> {{center.SCmobno}}
+        </address>
+        
+        <div class="form-group">
+          <button class="btn btn-success text-center" (click)="select(center)">Book Now</button>
+        </div>    
+
+      </div>
+      
+    </div>
+
+  </div>     
+
+  </div>
+</header>
+  
+
+
+
+

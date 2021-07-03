@@ -1,0 +1,84 @@
+<header class="header">
+  <div class="header_overlay">
+      <br> 
+      <br> 
+      <br> 
+      <br>
+
+  <div class="container">
+
+    <div class="col-md-9 col-xs-11 col-sm-11 row myrow"
+    *ngFor="let service of services; let i = index">
+      
+        <strong class="service_name">{{service.Sname}}</strong>
+        <strong class="service_price">Special Price : ₹{{service.Sprice}}</strong>
+        <strong class="market_price">Market Price : ₹{{service.Sprice+200}}</strong>
+        <input class="checkbox" type="checkbox" [(ngModel)]="Snum[i]"/>
+        
+      
+    </div>
+
+    <div class=" col-md-3 summary">
+    
+      <div class="myform">
+    
+        <form #myForm="ngForm" (submit)="book(myForm)">
+        <div class="form-group">
+          <label for="">Date</label>
+          <input 
+          required
+          ngModel
+          name="date"
+          #date="ngModel"
+          type="date"
+          min={{now}}
+          class="form-control">
+
+          <div class="error" *ngIf="date.touched && date.invalid">
+              <div *ngIf="date.errors.required">Date is mandatory</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Time</label>
+          <input 
+          required
+          ngModel
+          name="time"
+          #time="ngModel"
+          type="time"
+          class="form-control">
+
+          <div class="error" *ngIf="time.touched && time.invalid">
+              <div *ngIf="time.errors.required">Time is mandatory</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Pickup</label>
+          <input 
+          required
+          ngModel
+          name="pickup"
+          #pickup="ngModel"
+          type="text"
+          class="form-control">
+
+          <div class="error" *ngIf="pickup.touched && pickup.invalid">
+              <div *ngIf="pickup.errors.required">Pickup is mandatory</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+            <button [disabled]="myForm.invalid" class="btn btn-success text-center book">Book Now</button>
+        </div>
+        </form>
+      
+      </div>
+    
+    </div>
+
+  </div>     
+
+  </div>
+</header>

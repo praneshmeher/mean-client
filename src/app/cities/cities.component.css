@@ -1,0 +1,51 @@
+
+.header{
+    background-image: url(../images/service.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header_overlay{
+    background-color: rgba(31, 31, 31, 0.75);
+    height: 100%;
+}
+
+.city{
+    display: inline-block;
+    height: 220px;
+    width: 220px;
+    text-align: center;
+    background-color:whitesmoke;
+    line-height: 200px;
+    font-size: 25px;
+    color: black;
+    border-radius: 20px;
+    margin: 40px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.city:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .city{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        background-color:whitesmoke;
+        line-height: 100px;
+        font-size: 20px;
+        color: black;
+        border-radius: 20px;
+        margin: 5px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+}

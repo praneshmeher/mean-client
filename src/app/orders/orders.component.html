@@ -1,0 +1,42 @@
+<br> 
+<br> 
+<br> 
+
+<h3 class="booking_details">Booking Details</h3>
+
+  <div class="container">
+
+    <div class="panel panel-primary"
+    *ngFor="let detail of details">
+
+      <div class="panel-heading">
+        <div class="panel-title">Order Details</div>
+      </div>
+
+      <div class="panel-body">
+        <address >
+          <strong>Order Id : {{detail.Onum}}</strong><br>
+          <strong>Service Center : </strong> {{detail.SCname}}<br>
+        </address>
+
+        <address >
+          <strong>Services Booked :</strong><br>
+          {{detail.Services}}<br>
+          Date : {{detail.Date}}, Time : {{detail.Time}}<br>
+          Pickup : {{detail.Pickup}}
+        </address>
+        <strong>Total :{{detail.Total}}</strong><br>
+
+      </div>
+      
+    </div>
+
+    
+  </div>     
+
+
+  
+
+
+
+

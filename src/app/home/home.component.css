@@ -1,0 +1,37 @@
+
+.header{
+    background-image: url(../images/service.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header_overlay{
+    background-color: rgba(31, 31, 31, 0.75);
+    height: 100%;
+}
+
+.header_heading1 {
+    color: whitesmoke;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 250px;
+}
+
+@media screen and (max-width:767px) {
+    .header_heading1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 100px;    
+    }
+    .mybutton{
+        margin-top: 30px;
+        margin-left: 45px;
+    }
+
+}
+

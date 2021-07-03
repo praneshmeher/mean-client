@@ -1,0 +1,80 @@
+
+.mymenu{
+    text-align: center;
+    margin: 10px;
+    color: whitesmoke;
+    background-color: transparent;
+    border: solid 2px whitesmoke;
+    border-radius: 8px;
+    width: 180px;
+    height: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    line-height: 3.5em;
+    text-decoration: none;
+    
+    left: 100px;
+}
+
+.mymenu:hover{
+    background-color: whitesmoke;
+    color:black;
+}
+
+.myhome{
+    position: relative;
+    top: 5px;
+    left: 30px;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.myhome:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.ic{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+@media screen and (max-width:768px) {
+   .myhome{
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        color: whitesmoke;
+        font-size: 30px;
+    }
+
+    .mymenu{
+        text-align: center;
+        margin: 12px;
+        color: whitesmoke;
+        background-color: transparent;
+        border: solid 2px whitesmoke;
+        border-radius: 8px;
+        width: 190px;
+        height: 30px;
+        font-size: 10px;
+        text-transform: uppercase;
+        transition: all 0.4s;
+        line-height: 25px;
+        text-decoration: none;
+        
+        left: 90px;
+    }
+
+    .ic{
+        margin-top: 10px;
+        margin-left: 140px;
+        font-size: 15px;
+    }
+
+}

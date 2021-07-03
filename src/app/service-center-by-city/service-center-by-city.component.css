@@ -1,0 +1,16 @@
+
+.header{
+    background-image: url(../images/service.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header_overlay{
+    background-color: rgba(31, 31, 31, 0.75);
+    height:100%;
+}
+
+.panel{
+    cursor: pointer;
+}

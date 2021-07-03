@@ -1,0 +1,165 @@
+
+.header{
+    background-image: url(../images/service.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.header_overlay{
+    background-color: rgba(31, 31, 31, 0.75);
+    height: 100%;
+}
+
+.myrow{
+    background-color: whitesmoke;
+    height: 100px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px gray;
+    transition: all 0.5s;
+}
+
+.myrow:hover{
+    transform: scale(1.02);
+}
+
+.service_name{
+    position: absolute;
+    margin: 20px;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.service_price{
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+
+.market_price{
+    position: absolute;
+    right: 80px;
+    top: 60px;
+    color:red;
+    text-decoration: line-through;
+}
+
+.checkbox{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    size: 30px;
+}
+
+.summary{
+    background-color: whitesmoke;
+    border: solid 2px whitesmoke;
+    border-radius: 8px;
+    height: 340px;
+    width: 250px;
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 120px;
+}
+
+.book{
+
+    position: absolute;
+    right: 65px;
+    top: 270px;
+}
+
+.myform{
+    position: relative;
+    top: 10px;
+}
+
+.error{
+    color: red;
+}
+
+@media screen and (max-width:768px) {
+    .header{
+    background-image: url(../images/service.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+    height: 760px;
+    }
+
+    .header_overlay{
+    background-color: rgba(31, 31, 31, 0.75);
+    height: 100%;
+    }
+
+    .myrow{
+    background-color: whitesmoke;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px gray;
+    transition: all 0.5s;
+    }
+
+    .service_name{
+        position: absolute;
+        margin: 10px;
+        font-family: 'Times New Roman';
+        font-size: 10px;
+    }
+
+    .service_price{
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        font-size: 8px;
+    }
+
+    .market_price{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        color:red;
+        text-decoration: line-through;
+        font-size: 8px;
+    }
+
+    .checkbox{
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        size: 10px;
+    }
+
+    .summary{
+        background-color: whitesmoke;
+        border: solid 2px whitesmoke;
+        border-radius: 8px;
+        height: 280px;
+        width: 200px;
+        display: inline-block;
+        position: relative;
+        left: 60px;
+        
+        top: 20px;
+    }
+
+    .book{
+        position: relative;
+        left: 35px;
+        top: 0px;
+        height: 30px;
+        width: 90px;
+    }
+
+    .myform{
+        position: relative;
+        top: 10px;
+    
+    }
+
+    label{
+        font-size: 10px;
+    }
+}
